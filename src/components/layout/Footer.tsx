@@ -12,8 +12,8 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <img src="/logo.jpg" alt="Oscar Cleaning Service Logo" className="w-10 h-10 object-contain rounded-lg bg-white p-1" />
               <div className="flex flex-col">
-                <span className="text-2xl font-bold tracking-tight text-white">Oscar Cleaning</span>
-                <span className="text-sm font-medium text-brand-blue uppercase tracking-wider">Service LLC</span>
+                <span className="text-2xl font-bold tracking-tight text-white leading-none">Oscar Cleaning Service</span>
+                <span className="text-xs font-bold text-brand-blue uppercase tracking-wider mt-1">Since 2006</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-gray-300">
@@ -51,6 +51,7 @@ export default function Footer() {
               <li><Link href="#home" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Home</Link></li>
               <li><Link href="#about" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">About Us</Link></li>
               <li><Link href="#services" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Services</Link></li>
+              <li><Link href="#gallery" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Gallery</Link></li>
               <li><Link href="#contact" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -68,7 +69,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-brand-blue shrink-0" />
-                <a href="mailto:hello@oscarcleaningservice.com" className="hover:text-white transition-colors">hello@oscarcleaningservice.com</a>
+                <a href="mailto:Oscarcleaningservice@yahoo.com" className="hover:text-white transition-colors">Oscarcleaningservice@yahoo.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-4 w-4 text-brand-blue shrink-0" />
@@ -86,7 +87,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p className="mb-4 md:mb-0 text-center md:text-left">
-            &copy; {new Date().getFullYear()} Oscar Cleaning Service LLC. All rights reserved. | Developed by <a href="http://www.bizimptech.com" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:text-white transition-colors font-medium">Bizimp Technology</a>
+            &copy; {new Date().getFullYear()} Oscar Cleaning Service. All rights reserved. | Developed by <a href="http://www.bizimptech.com" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:text-white transition-colors font-medium">Bizimp Technology</a>
           </p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

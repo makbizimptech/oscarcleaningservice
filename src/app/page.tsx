@@ -4,6 +4,7 @@ import ServiceCards from "@/components/sections/ServiceCards";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import HowItWorks from "@/components/sections/HowItWorks";
 import WhatsIncluded from "@/components/sections/WhatsIncluded";
+import Gallery from "@/components/sections/Gallery";
 import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyChooseUs />
       <HowItWorks />
       <WhatsIncluded />
+      <Gallery />
       <Testimonials />
       <Contact />
     </>

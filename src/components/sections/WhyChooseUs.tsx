@@ -14,19 +14,18 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] lg:aspect-auto lg:h-[700px]">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-gray-100">
               <img
-                src="/why-choose-us.jpg"
-                alt="Friendly, professional cleaning team holding supplies in a pristine home"
-                className="absolute inset-0 w-full h-full object-cover"
+                src="/about.jpeg"
+                alt="Oscar Cleaning Service van and professional staff"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
             
             {/* Experience Badge */}
-            <div className="absolute -bottom-6 -right-6 bg-brand-accent text-white p-6 rounded-2xl shadow-xl flex flex-col items-center justify-center w-40 h-40 transform rotate-3 hover:rotate-0 transition-transform">
-              <span className="text-4xl font-bold">7+</span>
-              <span className="text-sm font-medium text-center leading-tight mt-1">Years of<br/>Excellence</span>
+            <div className="absolute -bottom-2.5 -right-2.5 sm:-bottom-5 sm:-right-5 bg-brand-accent text-white p-2 sm:p-5 rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl flex flex-col items-center justify-center w-20 h-20 sm:w-32 sm:h-32 transform rotate-3 hover:rotate-0 transition-transform text-center">
+              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-white/90 leading-tight">Since</span>
+              <span className="text-lg sm:text-3xl font-black tracking-tight leading-tight mt-0.5">2006</span>
             </div>
           </div>
           

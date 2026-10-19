@@ -9,6 +9,7 @@ const navigation = [
   { name: "Home", href: "#home" },
   { name: "About Us", href: "#about" },
   { name: "Services", href: "#services" },
+  { name: "Gallery", href: "#gallery" },
   { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
@@ -24,8 +25,8 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <img src="/logo.jpg" alt="Oscar Cleaning Service Logo" className="w-12 h-12 object-contain" />
           <div className="flex flex-col">
-            <span className="text-2xl font-black tracking-tight text-brand-navy">Oscar Cleaning</span>
-            <span className="text-xs font-bold text-brand-blue uppercase tracking-widest">Service LLC</span>
+            <span className="text-xl xl:text-2xl font-black tracking-tight text-brand-navy leading-none">Oscar Cleaning Service</span>
+            <span className="text-xs font-bold text-brand-blue uppercase tracking-widest mt-1">Since 2006</span>
           </div>
         </Link>
 
@@ -53,9 +54,12 @@ export default function Header() {
 
       {/* Mobile Top Bar */}
       <div className="flex lg:hidden items-center justify-between px-6 bg-white h-20 border-b border-gray-100">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2.5">
           <img src="/logo.jpg" alt="Oscar Cleaning Service Logo" className="w-10 h-10 object-contain" />
-          <span className="text-xl font-black tracking-tight text-brand-navy">Oscar Cleaning</span>
+          <div className="flex flex-col">
+            <span className="text-base sm:text-lg font-black tracking-tight text-brand-navy leading-tight">Oscar Cleaning Service</span>
+            <span className="text-[10px] sm:text-xs font-bold text-brand-blue uppercase tracking-wider">Since 2006</span>
+          </div>
         </Link>
         <button
           type="button"
@@ -90,9 +94,12 @@ export default function Header() {
           <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-brand-navy px-6 py-6 sm:max-w-sm">
             <div className="flex items-center justify-between mb-8">
-              <Link href="/" className="flex items-center gap-2 bg-white rounded-lg p-1 pr-3" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/" className="flex items-center gap-2.5 bg-white rounded-lg p-1.5 pr-3" onClick={() => setMobileMenuOpen(false)}>
                 <img src="/logo.jpg" alt="Oscar Cleaning Service Logo" className="w-8 h-8 object-contain" />
-                <span className="text-lg font-black tracking-tight text-brand-navy">Oscar Cleaning</span>
+                <div className="flex flex-col">
+                  <span className="text-sm font-black tracking-tight text-brand-navy leading-tight">Oscar Cleaning Service</span>
+                  <span className="text-[10px] font-bold text-brand-blue uppercase tracking-wider">Since 2006</span>
+                </div>
               </Link>
               <button
                 type="button"

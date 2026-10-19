@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Oscar Cleaning Service LLC | New Jersey & New York",
+  title: "Oscar Cleaning Service | New Jersey & New York",
   description: "Professional residential and commercial cleaning services in NJ & NY. Trusted by homeowners and businesses.",
 };
 

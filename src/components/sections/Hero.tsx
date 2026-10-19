@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 const backgroundImages = [
-  "/hero-1.jpg",
-  "/hero-2.jpg",
-  "/hero-3.jpg"
+  { src: "/hero-1.jpg", position: "object-top" },
+  { src: "/hero-2.jpg", position: "object-[center_15%]" },
+  { src: "/hero-3.jpg", position: "object-[70%_25%] lg:object-center" }
 ];
 
 const headlinePhrases = [
@@ -40,18 +40,18 @@ export default function Hero() {
   return (
     <section id="home" className="relative pt-32 pb-20 lg:pt-48 lg:pb-24 overflow-hidden min-h-[700px] flex items-center">
       {/* Background Slider */}
-      {backgroundImages.map((src, index) => (
+      {backgroundImages.map((item, index) => (
         <div
-          key={src}
+          key={item.src}
           className={cn(
-            "absolute inset-0 transition-opacity duration-1000 ease-in-out",
+            "absolute inset-x-0 bottom-0 top-20 lg:top-[152px] transition-opacity duration-1000 ease-in-out",
             index === currentImageIndex ? "opacity-100" : "opacity-0"
           )}
         >
           <img
-            src={src}
+            src={item.src}
             alt={`Cleaning background ${index + 1}`}
-            className="w-full h-full object-cover"
+            className={cn("w-full h-full object-cover", item.position)}
           />
           {/* Overlay to make text readable */}
           <div className="absolute inset-0 bg-black/60"></div>
